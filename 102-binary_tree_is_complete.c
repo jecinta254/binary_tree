@@ -8,11 +8,10 @@ void pop(levelorder_queue_t **head);
 int binary_tree_is_complete(const binary_tree_t *tree);
 
 /**
- * create_node - Creates a new levelorder_queue_t node.
- * @node: The binary tree node for the new node to contain.
- *
+ * create_node - Creating a new levelorder_queue_t node.
+ * @node: The binary tree node for new node to contain.
  * Return: If an error occurs, NULL.
- *         Otherwise, a pointer to the new node.
+ * Otherwise, a pointer to new node.
  */
 levelorder_queue_t *create_node(binary_tree_t *node)
 {
@@ -30,7 +29,7 @@ levelorder_queue_t *create_node(binary_tree_t *node)
 
 /**
  * free_queue - Frees a levelorder_queue_t queue.
- * @head: A pointer to the head of the queue.
+ * @head: A pointer to head of queue.
  */
 void free_queue(levelorder_queue_t *head)
 {
@@ -45,12 +44,12 @@ void free_queue(levelorder_queue_t *head)
 }
 
 /**
- * push - Pushes a node to the back of a levelorder_queue_t queue.
- * @node: The binary tree node to print and push.
- * @head: A double pointer to the head of the queue.
- * @tail: A double pointer to the tail of the queue.
+ * push - Pushes a node to back of levelorder_queue_t queue.
+ * @node: binary tree node to print and push.
+ * @head: double pointer to head of queue.
+ * @tail: double pointer to tail of queue.
  *
- * Description: Upon malloc failure, exits with a status code of 1.
+ * Description: Upon malloc failure, exits with status code of 1.
  */
 void push(binary_tree_t *node, levelorder_queue_t *head,
 		levelorder_queue_t **tail)
@@ -68,8 +67,8 @@ void push(binary_tree_t *node, levelorder_queue_t *head,
 }
 
 /**
- * pop - Pops the head of a levelorder_queue_t queue.
- * @head: A double pointer to the head of the queue.
+ * pop - Pops head of levelorder_queue_t queue.
+ * @head: A double pointer to head of queue.
  */
 void pop(levelorder_queue_t **head)
 {
@@ -82,12 +81,10 @@ void pop(levelorder_queue_t **head)
 
 /**
  * binary_tree_is_complete - Checks if a binary tree is complete.
- * @tree: A pointer to the root node of the tree to traverse.
- *
+ * @tree: A pointer to the root node of tree to traverse.
  * Return: If the tree is NULL or not complete, 0.
- *         Otherwise, 1.
- *
- * Description: Upon malloc failure, exits with a status code of 1.
+ * Otherwise, 1.
+ * Description: Upon malloc failure, exits with  status code of 1.
  */
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
